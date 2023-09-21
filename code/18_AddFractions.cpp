@@ -17,5 +17,14 @@ int main()
     x3 = ((x1 * y2) + (x2 * y1));
     y3 = (y1 * y2);
 
-    cout << "The addition of the given fraction is : " << x3 / y3 << endl;
+    for (int i = 1; i <= x3; i++) // doesnt matter if we run loop till x3 or y3.
+    {
+        if ((x3 % i == 0) && (y3 % i == 0))
+        {
+            x3 = x3 / i;
+            y3 = y3 / i;
+        }
+    }
+
+    cout << "The addition of the given fraction is : " << x3 << "/" << y3 << endl;
 }
