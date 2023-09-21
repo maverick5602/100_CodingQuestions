@@ -1,6 +1,6 @@
+// Get an algebraic expression as input from the user and then remove all the brackets in that.
 #include <iostream>
 using namespace std;
-
 int main()
 {
     cout << "Enter a String : ";
@@ -9,7 +9,7 @@ int main()
     cin >> s;
     for (int i = 0; i < s.length(); i++)
     {
-        if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u' || s[i] == 'A' || s[i] == 'E' || s[i] == 'I' || s[i] == 'O' || s[i] == 'U')
+        if (s[i] == '(' || s[i] == ')')
         {
             for (int j = i; j < s.length(); j++)
             {
@@ -18,7 +18,6 @@ int main()
             count++;
         }
     }
-    cout << "The New string is :" << s;
-
+    cout << "The new Algebraic expression is :" << s;
     return 0;
 }
