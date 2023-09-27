@@ -7,13 +7,14 @@ int main()
     int n;
     cout << "Enter an integer:";
     cin >> n;
-    for (int i = 0; i < n; i++)
+    for (int i = 1; i < n; i++)
     {
-        cout << "* ";
-        for (int j = i; j < n; j++)
+
+        for (int j = i - n + 1; j <= n; j++)
         {
             cout << " ";
         }
+        cout << "*";
         cout << endl;
     }
 
