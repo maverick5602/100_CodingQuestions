@@ -32,6 +32,7 @@ int main()
         {
             cout << "Fail" << endl;
         }
+        t--;
     }
 
     return 0;
